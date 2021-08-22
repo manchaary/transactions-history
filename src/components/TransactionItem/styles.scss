@@ -1,0 +1,33 @@
+.transaction-item {
+  gap: 4px;
+  display: grid;
+  margin: 4px;
+  border: 1px solid #dedede;
+  align-items: center;
+  font-weight: 600;
+  border-radius: 4px;
+  border-left-width: 4px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  &-buy {
+    border-left-color: #22bf22;
+  }
+
+  &-sell {
+    border-left-color: #f54c4c;
+  }
+
+  & > div {
+    grid-area: 1;
+  }
+
+  &-tokens {
+    text-align: right;
+  }
+
+  &-symbols {
+    color: #808a9d;
+    font-size: 12px;
+    font-weight: normal;
+  }
+}

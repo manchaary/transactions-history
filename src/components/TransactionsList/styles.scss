@@ -1,0 +1,24 @@
+.transactions-list {
+  width: 25%;
+  height: 100vh;
+  overflow-y: auto;
+  border-radius: 8px;
+}
+
+.transactions-enter {
+  opacity: 0;
+}
+
+.transactions-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.transactions-exit {
+  opacity: 1;
+}
+
+.transactions-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
